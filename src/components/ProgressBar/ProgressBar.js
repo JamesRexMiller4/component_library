@@ -26,6 +26,8 @@ const ProgressBar = ({ value, size }) => {
       <VisuallyHidden>{value}</VisuallyHidden>
     </LargeBar>
   </LargeBase>)
+    default:
+      break;
   }
   return (
   <WrapperBase role="meter" aria-valuenow={value} aria-valuemin="0" aria-valuemax="100" tabIndex={1}>
